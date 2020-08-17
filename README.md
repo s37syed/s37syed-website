@@ -3,9 +3,16 @@ Repository for my website's development
 
 
 ## Docker specific commands  
-- docker build -f Dockerfile -t website:prod-<version-number> .
-- docker run -it -p 80:80 --rm website:prod-<version-number>
-  
+- `docker build -f Dockerfile -t website:prod-<version-number> .`
+   - this will build the docker file and tag it with website:prod<version-number>
+- `docker run -it -p 80:80 --rm website:prod-<version-number>`
+   - this will run the docker image locally
+- `docker tag website:prod-1.0.0 shahdeys/website:1.0.0`
+   - this will tag the image to prep it for release
+- `docker push shahdeys/website:1.0.0`
+   - this will push to docker hub
+- docker hub url: `https://hub.docker.com/repository/docker/shahdeys/website/general`
+
 ## Software used  
 * AngularJS 8.3.29 (TypeScript)  
 * HTML5  
