@@ -11,6 +11,8 @@ Repository for my website's development
    - this will tag the image to prep it for release
 - `docker push shahdeys/website:1.0.0`
    - this will push to docker hub
+- `docker run -p 3000:3000 shahdeys/website:1.0.0`
+   - command to run on prod server to run container
 - docker hub url: `https://hub.docker.com/repository/docker/shahdeys/website/general`
 
 ## Software used  
