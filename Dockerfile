@@ -3,10 +3,15 @@
 #####################
 
 # base image
-FROM node:12.18.3 as build
+FROM debian:latest as build
 
 # set working directory
 WORKDIR /app
+
+# download wget and nodejs
+RUN apt-get update && apt-get install -y wget     		
+RUN wget https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get update && apt install -y nodejs npm
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
@@ -20,7 +25,10 @@ RUN npm install -g @angular/cli@8.3.29
 COPY . /app
 
 # generate build
-RUN ng build --prod --output-path=dist
+RUN ng build --prod
+
+# add resume
+COPY resume.pdf /app/dist/resume.pdf
 
 ############
 ### prod ###
@@ -28,6 +36,8 @@ RUN ng build --prod --output-path=dist
 
 # base image
 FROM nginx:1.16.0-alpine
+
+RUN apk update && apk add netcat-openbsd bc curl wget git bash openssl libressl
 
 # copy artifact build from the 'build environment'
 COPY --from=build /app/dist /usr/share/nginx/html
