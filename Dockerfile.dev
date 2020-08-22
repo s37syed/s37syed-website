@@ -1,6 +1,6 @@
-#####################
-### ng-build-prod ###
-#####################
+##################################
+### devl + ssl first time init ###
+##################################
 
 # base image
 FROM debian:latest as build
@@ -29,10 +29,6 @@ RUN ng build --prod
 
 # add resume
 COPY resume.pdf /app/dist/resume.pdf
-
-############
-### prod ###
-############
 
 # base image
 FROM nginx:1.16.0-alpine
