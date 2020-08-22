@@ -1,5 +1,5 @@
-# s37syed-website  
-Repository for my website's development
+# shahsyed.com  
+Repository for my virtual presence on the interwebs
 
 ## Software used  
 * AngularJS 8.3.29 (TypeScript)  
