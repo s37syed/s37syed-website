@@ -57,7 +57,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Todo
 * Add robots.txt
-* Add HTTPS to not make website throw errors when visiting
 * Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
 * Fix bug where you scroll down and footer is not responsive and there are spacing issues around it
 * Fix bug where hotlinking a page should highlight nav menu 
@@ -70,10 +69,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * Add SoundCloud link to bottom of navbar
 * Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com
 * Add section for music production/hobbies  
-* remove DS store from repo
 * Add CI/CD pipeline
 * Add trivial unit tests
 * Update to Angular 10
+~~* remove DS store from repo~~
+~~* Add HTTPS to not make website throw errors when visiting~~
 * ~~Dockerize NodeJS application~~
 * ~~Update to NG 8~~
 * ~~Update site from AngularJS 2.0 Beta 7 to Angular (AngularJS 4.0)~~
