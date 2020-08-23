@@ -1,6 +1,20 @@
 # shahsyed.com  
 Repository for my virtual presence on the interwebs
 
+
+## Docker specific commands  
+- `docker build -f Dockerfile -t website:prod-<version-number> .`
+   - this will build the docker file and tag it with website:prod<version-number>
+- `docker run -it -p 80:80 --rm website:prod-<version-number>`
+   - this will run the docker image locally
+- `docker tag website:prod-1.0.0 shahdeys/website:1.0.0`
+   - this will tag the image to prep it for release
+- `docker push shahdeys/website:1.0.0`
+   - this will push to docker hub
+- `docker run -p 3000:3000 shahdeys/website:1.0.0`
+   - command to run on prod server to run container
+- docker hub url: `https://hub.docker.com/repository/docker/shahdeys/website/general`
+
 ## Software used  
 * AngularJS 8.3.29 (TypeScript)  
 * HTML5  
@@ -65,7 +79,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * Clean up classes
 * Reorganize file structure and TypeScript classes  
 * Add SEO to site
-* Add blogging system 
+* Add blogging system
 * Add SoundCloud link to bottom of navbar
 * Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com
 * Add section for music production/hobbies  
