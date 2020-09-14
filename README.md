@@ -72,6 +72,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * Add CI/CD pipeline
 * Add trivial unit tests
 * Update to Angular 10
+* Dark mode lol
 * ~~remove DS store from repo~~
 * ~~Add HTTPS to not make website throw errors when visiting~~
 * ~~Dockerize NodeJS application~~
