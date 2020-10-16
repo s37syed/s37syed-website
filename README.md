@@ -80,6 +80,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * Reorganize file structure and TypeScript classes  
 * Add SEO to site
 * Add blogging system
+* Add reddit link to bottom of nav bar
 * Add SoundCloud link to bottom of navbar
 * Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com
 * Add section for music production/hobbies  
